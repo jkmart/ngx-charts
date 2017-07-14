@@ -27,7 +27,7 @@ export var AdvancedLegendComponent = (function () {
         return this.data.map(function (d, index) {
             var label = formatLabel(d.name);
             var value = d.value;
-            var percentage = value / _this.total * 100;
+            var percentage = value ? value / _this.total * 100 : 0;
             var color = _this.colors.getColor(label);
             return {
                 value: value,
