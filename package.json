@@ -1,5 +1,5 @@
 {
-  "name": "@swimlane/ngx-charts",
+  "name": "@intraedge/ngx-charts",
   "version": "4.4.0",
   "description": "Declarative Charting Framework for Angular2 and beyond!",
   "main": "release/index.js",
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swimlane/ngx-charts.git"
+    "url": "git+https://bitbucket.org:intraedge/ngx-charts.git"
   },
   "keywords": [
     "angular2",
@@ -141,7 +141,7 @@
     "style-loader": "^0.14.1",
     "to-string-loader": "^1.1.5",
     "ts-helpers": "1.1.2",
-    "tslint": "^4.0.2",
+    "tslint": "^4.5.1",
     "tslint-config-swimlane": "^2.0.1",
     "tslint-loader": "^3.3.0",
     "typescript": "~2.0.10",
@@ -152,6 +152,6 @@
     "webpack-dev-server": "^2.2.0",
     "webpack-merge": "^4.1.0",
     "webpack-notifier": "^1.5.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.13"
   }
 }
