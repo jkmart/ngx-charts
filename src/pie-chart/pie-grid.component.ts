@@ -63,7 +63,7 @@ import { formatLabel } from '../common/label.helper';
             text-anchor="middle"
             ngx-charts-count-up
             [countTo]="series.total"
-            [countPrefix]="'Total: '">
+            [countPrefix]="prefix">
           </svg:text>
         </svg:g>
       </svg:g>
@@ -77,7 +77,8 @@ import { formatLabel } from '../common/label.helper';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PieGridComponent extends BaseChartComponent {
-  @Input() tooltipDisabled: boolean = false;  
+  @Input() tooltipDisabled: boolean = false;
+  @Input() prefix: string = 'Total: ';
 
   dims: ViewDimensions;
   data: any[];
