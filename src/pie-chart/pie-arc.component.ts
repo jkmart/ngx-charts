@@ -80,7 +80,7 @@ export class PieArcComponent implements OnChanges {
 
   update(): void {
     const arc = this.calculateArc();
-    this.path = arc.startAngle(this.startAngle).endAngle(this.endAngle)();
+    this.path = arc.startAngle(this.startAngle).endAngle(this.endAngle || Math.PI * 2)();
     this.startOpacity = 0.5;
 
     const pageUrl = this.location instanceof PathLocationStrategy
